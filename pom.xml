@@ -5,8 +5,7 @@
   <groupId>smart.tech</groupId>
   <artifactId>com.demoblaze</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  <dependencies>
+<dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -53,6 +52,17 @@
                 </configuration>
             </plugin>
             <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.1.0</version>
+            <configuration>
+                <mainClass>com.practice.Loop</mainClass>
+            </configuration>
+        </plugin>
+    
+            <!--
+            
+            <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M7</version>
@@ -61,7 +71,9 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
-			</plugin>
+			</plugin> -->
+			
+            
             <plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
